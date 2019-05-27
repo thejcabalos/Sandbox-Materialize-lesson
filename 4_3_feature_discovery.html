@@ -126,8 +126,8 @@
 
     <!-- FEATURE DISCOVERY -->
     <a class="waves-effect waves-light btn" 
-     onClick="$('.tap-target').taptarget('open')">Open Tap Target</a>
-    <a onClick="$('.tap-target').taptarget('close')"
+    onClick="$('.tap-target').tapTarget('open')">Open Tap Target</a>
+    <a onClick="$('.tap-target').tapTarget('close')" 
     class="waves-effect waves-light btn">Close Tap Target</a>
 
     <div class="fixed-action-btn">
@@ -136,23 +136,23 @@
       </a>
     </div>
 
-    <div>
-      <div class="tap-target-wrapper">
-        <div class="tap-target blue" data-selector="menu">
+    <div class="tap-target-wrapper">
+      <div class="tap-target green" data-activates="menu">
         <div class="tap-target-content white-text">
-          <a class="btn" href="#!" onclicks="alert('.test')"></a>
           <h5>Hello World</h5>
+          
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi provident cupiditate dolores. Impedit cum asperiores
             a aspernatur ullam esse id!</p>
+            <a class="btn" href="4_2_collapsible.html">collapsible</a>
         </div>
       </div>
-      <div class="tap-target-wave">
-        <a class="btn btn-floating btn-large cyan tap-target-origin">
+
+      <div class="tap-target-wave"> 
+        <a class="btn btn-floating btn-large darkgreen tap-target-origin">
           <i class="material-icons">menu</i>
         </a>
       </div>
     </div>
-
 
     <!-- END HERE -->
 

@@ -142,12 +142,12 @@
         <div class="collapsible-body">
           <span>This is the second area</span>
         </div>
-      </li class="collapsible-header">
+      </li>
       <li>
-        <div class="collapsible-body">
+        <div class="collapsible-header">
           <i class="material-icons">info</i>Third
         </div>
-        <div>
+        <div class="collapsible-body">
           <span>This is the third area</span>
         </div>
       </li>
@@ -155,32 +155,33 @@
 
     <!-- EXPANDABLE COLLAPSIBLE -->
 
-    <ul class="expandable" data-collapsible="accordian">
-      <li>
-        <div class="collapsible-header"></div>
-          <i class="material-icons"></i>First
-        </div>
-        <div class="collapsible-body">
-          <span>This is the first area</span>
-        </div>
-      </li>
-      <li>
-          <div class="collapsible-header"></div>
-            <i class="material-icons"></i>Second
+    <ul class="collapsible" data-collapsible="accordian">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">group_work</i>First
+          </div>
+          <div class="collapsible-body">
+            <span>This is the first area</span>
+          </div>
+        </li>
+        <li>
+          <!-- pre-select -->
+          <div class="collapsible-header">
+            <i class="material-icons">help</i>Second
           </div>
           <div class="collapsible-body">
             <span>This is the second area</span>
           </div>
         </li>
         <li>
-            <div class="collapsible-header"></div>
-              <i class="material-icons"></i>Third
-            </div>
-            <div class="collapsible-body">
-              <span>This is the third area</span>
-            </div>
-          </li>
-    </ul>
+          <div class="collapsible-header">
+            <i class="material-icons">info</i>Third
+          </div>
+          <div class="collapsible-body">
+            <span>This is the third area</span>
+          </div>
+        </li>
+      </ul>
 
     <!-- END HERE -->
 
@@ -212,6 +213,16 @@ $(".collapsible").collapsible({
 }
 
     });
+
+    // EXPANDABLE //
+    $(".expandable").expandable({
+  onOpen: function () { alert ("open")},
+  onClose: function () { alert ("close")}
+
+}
+
+    });
+
   </script>
 </body>
 
