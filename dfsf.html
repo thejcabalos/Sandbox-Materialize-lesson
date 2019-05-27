@@ -1,0 +1,134 @@
+
+
+  <!-- START HERE -->
+
+  <!-- STANDARD MENU -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo center">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-small-and-down">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+
+  <!-- RESPONSIVE WITH SIDE MENU -->
+  <nav class="blue darken-4">
+    <div class="container"> 
+      <div class="nav-wrapper"> 
+        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" class="button-collapse" data-activates="mobile-nav">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+
+          <!-- DROPDOWN TRIGGER -->
+          <li>
+            <a href="#!" class="dropdown-button" data-activates="my-dropdown">Dropdown
+              <i class="material-icons right"></i>
+            </a>
+          </li>
+          <!-- BUTTON LINK -->
+          <li>
+            <a class="btn waves-effect waves-light">Login</a>
+          </li>
+          <!-- ICON LINK -->
+          <li>
+            <a href="#">
+              <i class="material-icons">person</i>
+            </a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DROPDOWN MENU -->
+  <ul id="my-dropdown" class="dropdown-content">
+    <li>
+      <a href="#">Link 1</a>
+    </li>
+    <li>
+      <a href="#">Link 2</a>
+    </li>
+    <li>
+      <a href="#">Link 3</a>
+    </li>
+  </ul>
+
+  <br>
+  <br>
+
+  <!-- FIXED NAVBAR -->
+  <div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!-- SEARCH BAR -->
+
+
+
+  <!-- END HERE -->
+
+  <div style="margin-top:1000px;"></div>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+
+      // JAVASCRIPT START HERE //
+
+      $('.button-collapse').sideNav();
+
+
+    });
+  </script>
+</body>
+
+</html>

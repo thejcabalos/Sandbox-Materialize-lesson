@@ -129,10 +129,10 @@
 
   <!-- STANDARD MENU -->
   <nav>
-    <div>
-      <div>
-        <a href="#">Logo</a>
-        <ul>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo center" >Logo</a>
+        <ul id="nav-mobile" class="right-hide-on-med-and-down">
           <li>
             <a href="#">Home</a>
           </li>
@@ -151,14 +151,14 @@
   <br>
 
   <!-- RESPONSIVE WITH SIDE MENU -->
-  <nav>
-    <div>
-      <div>
-        <a href="#">Logo</a>
-        <a href="#">
-          <i></i>
+  <nav class="blue darken-4">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo right">Logo</a>
+        <a href="#" class="button-collapse" data-activates="mobile-new"> 
+          <i class="material-icons">menu</i>
         </a>
-        <ul>
+        <ul class="right-hide-on-med-and-down">
           <li>
             <a href="#">Home</a>
           </li>
@@ -171,22 +171,22 @@
 
           <!-- DROPDOWN TRIGGER -->
           <li>
-            <a href="#!">Dropdown
-              <i></i>
+            <a href="#!" class="dropdown-button" data-activates="my-dropdown">Dropdown
+              <i class="material-icons right"></i>
             </a>
           </li>
           <!-- BUTTON LINK -->
           <li>
-            <a>Login</a>
+            <a class="btn waves-effect waves-light">Login</a>
           </li>
           <!-- ICON LINK -->
           <li>
             <a href="#">
-              <i>p</i>
+              <i class="material-icons">person</i>
             </a>
           </li>
         </ul>
-        <ul>
+        <ul class="side-nav" id="mobile-nav">
           <li>
             <a href="#">Home</a>
           </li>
@@ -202,7 +202,7 @@
   </nav>
 
   <!-- DROPDOWN MENU -->
-  <ul>
+  <ul id="my-dropdown" class="dropdown-content">
     <li>
       <a href="#">Link 1</a>
     </li>
@@ -218,15 +218,30 @@
   <br>
 
   <!-- FIXED NAVBAR -->
-  <div>
+     <div class="navbar-fixed">
+       <nav class="black">
+          <div class="nav-wrapper">
+             <a href="#" class="brand-logo center" >Logo</a>
+          </div>
+            <ul id="nav-mobile" class="right-hide-on-small-and-down"></ul>
+    <   /nav>
 
   </div>
 
   <br>
   <br>
 
-  <!-- SEARCH BAR -->
-
+  <!-- SEARCH BAR -->  
+     <nav class="green">
+       <div class="nav-wrapper">
+         <form> 
+           <div class="input-field">
+             <input type="search"><label for="" 
+             class="label-icon"><i class="material-icons">search</i>
+             <i class="material-icons">close</i></label>
+           </form>
+       </div>
+     </nav>
 
 
   <!-- END HERE -->
